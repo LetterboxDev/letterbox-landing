@@ -1,2 +1,2 @@
 # letterbox-landing
-Lnading page for Letterbox
+Landing page for Letterbox
