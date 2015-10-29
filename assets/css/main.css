@@ -2148,7 +2148,7 @@ a {
 /* line 70, ../sass/main.scss */
 a:hover {
   border-bottom-color: transparent !important;
-  color: #6bd4c8;
+  color: #fa5c4f;
 }
 
 /* line 76, ../sass/main.scss */
@@ -2397,7 +2397,7 @@ input[type="password"]:focus,
 input[type="email"]:focus,
 select:focus,
 textarea:focus {
-  border-color: #6bd4c8;
+  border-color: #fa5c4f;
 }
 
 /* line 298, ../sass/main.scss */
@@ -2511,7 +2511,7 @@ input[type="radio"]:checked + label:before {
 /* line 380, ../sass/main.scss */
 input[type="checkbox"]:focus + label:before,
 input[type="radio"]:focus + label:before {
-  border-color: #6bd4c8;
+  border-color: #fa5c4f;
 }
 
 /* line 388, ../sass/main.scss */
@@ -2597,7 +2597,7 @@ input[type="radio"] + label:before {
 }
 /* line 459, ../sass/main.scss */
 .icon.style1:before {
-  color: #c3e895;
+  color: #FA6E19;
 }
 /* line 460, ../sass/main.scss */
 .icon.style2:before {
@@ -2605,7 +2605,7 @@ input[type="radio"] + label:before {
 }
 /* line 461, ../sass/main.scss */
 .icon.style3:before {
-  color: #6bd4c8;
+  color: #fa5c4f;
 }
 /* line 462, ../sass/main.scss */
 .icon.style4:before {
@@ -2617,7 +2617,7 @@ input[type="radio"] + label:before {
 }
 /* line 464, ../sass/main.scss */
 .icon.style6:before {
-  color: #6b88e6;
+  color: #FF6161;
 }
 /* line 466, ../sass/main.scss */
 .icon.major {
@@ -3159,7 +3159,7 @@ button:disabled,
   background-color: #4686a0;
   color: rgba(255, 255, 255, 0.75);
   background-attachment: fixed,							fixed,							fixed;
-  background-image: url("images/overlay2.png"), url("images/overlay3.svg"), linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2);
+  background-image: url("images/overlay2.png"), url("images/overlay3.svg"), linear-gradient(45deg, #db661e 5%, #e5574b 30%, #ed5a5a);
   background-position: top left,						center center,					center center;
   background-size: auto,							cover,							cover;
   overflow: hidden;
@@ -3309,7 +3309,7 @@ button:disabled,
   -webkit-transition: opacity 1s ease;
   -ms-transition: opacity 1s ease;
   transition: opacity 1s ease;
-  background-image: linear-gradient(45deg, #4fa49a, #4361c2);
+  background-image: linear-gradient(45deg, #e5574b, #ed5a5a);
   content: '';
   height: 100%;
   left: 0;
@@ -3347,7 +3347,7 @@ body.is-loading #header:after {
   background-color: #4686a0;
   color: rgba(255, 255, 255, 0.75);
   background-attachment: fixed,							fixed,							fixed;
-  background-image: url("images/overlay2.png"), url("images/overlay4.svg"), linear-gradient(45deg, #4361c2, #4fa49a 50%, #9dc66b 95%);
+  background-image: url("images/overlay2.png"), url("images/overlay4.svg"), linear-gradient(45deg, #ed5a5a, #e5574b 50%, #db661e 95%);
   background-position: top left,						center center,					center center;
   background-size: auto,							cover,							cover;
   text-align: center;

@@ -7,7 +7,7 @@
 /* line 14, ../sass/ie9.scss */
 #header {
   background-image: none;
-  filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr="#4fa49a", endColorStr="#4361c2", GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr="#e5574b", endColorStr="#ed5a5a", GradientType=1);
   position: relative;
 }
 /* line 22, ../sass/ie9.scss */
@@ -32,7 +32,7 @@
 /* line 42, ../sass/ie9.scss */
 #footer {
   background-image: none;
-  filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr="#4361c2", endColorStr="#4fa49a", GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr="#ed5a5a", endColorStr="#e5574b", GradientType=1);
   position: relative;
 }
 /* line 50, ../sass/ie9.scss */
