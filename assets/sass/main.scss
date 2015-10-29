@@ -988,6 +988,7 @@ button,
 		opacity: 1;
 		position: relative;
 		z-index: 1;
+		text-align: center;
 
 		.actions {
 			@include vendor('transition', 'transform 1.25s ease');
@@ -998,6 +999,29 @@ button,
 
 		.app-logo {
 			width: 300px;
+		}
+
+		.app-link {
+			margin-top: 20px;
+			max-width: 450px;
+			display: inline-block;
+
+			a {
+				text-decoration: none;
+				border: none;
+
+				&:hover {
+					img {
+						background-color: rgba(255, 255, 255, 0.125);
+					}
+				}
+			}
+
+			.app-store-logo, .google-play-logo {
+				@include vendor('transition', ('background-color #{_duration(transition)} ease-in-out', 'color #{_duration(transition)} ease-in-out'));
+				width: 200px;
+				margin-bottom: 20px;
+			}
 		}
 	}
 
