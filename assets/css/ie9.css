@@ -3,53 +3,52 @@
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
-
 /* Header */
-
-	#header {
-		background-image: none;
-		filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr="#4fa49a", endColorStr="#4361c2", GradientType=1);
-		position: relative;
-	}
-
-		#header:before {
-			background-image: url("images/overlay2.png"), url("images/overlay3.svg");
-			background-position: top left,							center center;
-			background-size: auto,								cover;
-			content: '';
-			height: 100%;
-			left: 0;
-			position: absolute;
-			top: 0;
-			width: 100%;
-		}
-
-		#header > * {
-			position: relative;
-			z-index: 1;
-		}
+/* line 14, ../sass/ie9.scss */
+#header {
+  background-image: none;
+  filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr="#4fa49a", endColorStr="#4361c2", GradientType=1);
+  position: relative;
+}
+/* line 22, ../sass/ie9.scss */
+#header:before {
+  background-image: url("images/overlay2.png"), url("images/overlay3.svg");
+  background-position: top left,							center center;
+  background-size: auto,								cover;
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+/* line 34, ../sass/ie9.scss */
+#header > * {
+  position: relative;
+  z-index: 1;
+}
 
 /* Footer */
-
-	#footer {
-		background-image: none;
-		filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr="#4361c2", endColorStr="#4fa49a", GradientType=1);
-		position: relative;
-	}
-
-		#footer:before {
-			background-image: url("images/overlay2.png"), url("images/overlay4.svg");
-			background-position: top left,							center center;
-			background-size: auto,								cover;
-			content: '';
-			height: 100%;
-			left: 0;
-			position: absolute;
-			top: 0;
-			width: 100%;
-		}
-
-		#footer > * {
-			position: relative;
-			z-index: 1;
-		}
+/* line 42, ../sass/ie9.scss */
+#footer {
+  background-image: none;
+  filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr="#4361c2", endColorStr="#4fa49a", GradientType=1);
+  position: relative;
+}
+/* line 50, ../sass/ie9.scss */
+#footer:before {
+  background-image: url("images/overlay2.png"), url("images/overlay4.svg");
+  background-position: top left,							center center;
+  background-size: auto,								cover;
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+/* line 62, ../sass/ie9.scss */
+#footer > * {
+  position: relative;
+  z-index: 1;
+}
