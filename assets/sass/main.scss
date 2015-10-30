@@ -948,6 +948,7 @@ button,
 
 #header {
 	height: 100vh;
+	min-height: 700px;
 	@include padding(9em, 0, (0,0,_size(element-margin),0));
 	@include dark(#4686a0);
 	background-attachment:	fixed,							fixed,							fixed;
@@ -1020,7 +1021,7 @@ button,
 			.app-store-logo, .google-play-logo {
 				@include vendor('transition', ('background-color #{_duration(transition)} ease-in-out', 'color #{_duration(transition)} ease-in-out'));
 				width: 200px;
-				margin-bottom: 20px;
+				margin-bottom: 10px;
 			}
 		}
 	}
