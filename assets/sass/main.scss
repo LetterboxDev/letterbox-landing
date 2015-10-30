@@ -1039,6 +1039,20 @@ button,
 	}
 }
 
+#how-it-works {
+	h1 {
+		margin-bottom: 0;
+	}
+
+	p {
+		margin-bottom: 4em;
+	}
+	
+	.image.fit {
+		margin-bottom: 1em;
+	}
+}
+
 body.is-loading {
 	#header {
 		.inner {
