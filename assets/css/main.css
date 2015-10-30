@@ -3308,30 +3308,30 @@ button:disabled,
 /* line 1000, ../sass/main.scss */
 #header .inner .app-logo {
   width: 300px;
+  max-width: 60vw;
 }
-/* line 1004, ../sass/main.scss */
+/* line 1005, ../sass/main.scss */
 #header .inner .app-link {
-  margin-top: 20px;
-  max-width: 450px;
+  margin-top: 5vh;
+  max-width: 400px;
   display: inline-block;
 }
-/* line 1009, ../sass/main.scss */
+/* line 1010, ../sass/main.scss */
 #header .inner .app-link a {
   text-decoration: none;
   border: none;
 }
-/* line 1014, ../sass/main.scss */
+/* line 1015, ../sass/main.scss */
 #header .inner .app-link a:hover img {
   background-color: rgba(255, 255, 255, 0.125);
 }
-/* line 1020, ../sass/main.scss */
+/* line 1021, ../sass/main.scss */
 #header .inner .app-link .app-store-logo, #header .inner .app-link .google-play-logo {
   -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-  width: 200px;
-  margin-bottom: 20px;
+  width: 100%;
 }
 /* line 1028, ../sass/main.scss */
 #header:after {

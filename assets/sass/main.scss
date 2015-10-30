@@ -999,11 +999,12 @@ button,
 
 		.app-logo {
 			width: 300px;
+			max-width: 60vw;
 		}
 
 		.app-link {
-			margin-top: 20px;
-			max-width: 450px;
+			margin-top: 5vh;
+			max-width: 400px;
 			display: inline-block;
 
 			a {
@@ -1019,8 +1020,7 @@ button,
 
 			.app-store-logo, .google-play-logo {
 				@include vendor('transition', ('background-color #{_duration(transition)} ease-in-out', 'color #{_duration(transition)} ease-in-out'));
-				width: 200px;
-				margin-bottom: 20px;
+				width: 100%;
 			}
 		}
 	}
