@@ -3328,22 +3328,22 @@ button:disabled,
 }
 
 /* line 1020, ../sass/main.scss */
-.app-link {
+.app-link.row {
   margin-top: 5vh;
   max-width: 400px;
   display: inline-block;
 }
 /* line 1025, ../sass/main.scss */
-.app-link a {
+.app-link.row a {
   text-decoration: none;
   border: none;
 }
 /* line 1030, ../sass/main.scss */
-.app-link a:hover img {
+.app-link.row a:hover img {
   background-color: rgba(255, 255, 255, 0.125);
 }
 /* line 1036, ../sass/main.scss */
-.app-link .app-store-logo, .app-link .google-play-logo {
+.app-link.row .app-store-logo, .app-link.row .google-play-logo {
   -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -3479,7 +3479,7 @@ body.is-loading #header:after {
 }
 /* line 1085, ../sass/main.scss */
 #footer .icons {
-  margin: 0;
+  margin: 5vh 0 0 0;
 }
 /* line 1089, ../sass/main.scss */
 #footer .copyright {

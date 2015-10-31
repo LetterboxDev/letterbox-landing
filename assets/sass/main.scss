@@ -1017,7 +1017,7 @@ button,
 	}
 }
 
-.app-link {
+.app-link.row {
 	margin-top: 5vh;
 	max-width: 400px;
 	display: inline-block;
@@ -1083,7 +1083,7 @@ body.is-loading {
 	text-align: center;
 
 	.icons {
-		margin: 0;
+		margin: 5vh 0 0 0;
 	}
 
 	.copyright {
