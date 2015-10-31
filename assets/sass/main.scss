@@ -1026,9 +1026,23 @@ button,
 		text-decoration: none;
 		border: none;
 
-		&:hover {
+		&:hover img {
+			background-color: rgba(255, 255, 255, 0.125);
+		}
+
+		&.disabled {
+			cursor: default;
+			&:after {
+				content: "Coming soon";
+				font-size: 13px;
+				position: relative;
+				top: -5px;
+			}
+			&:hover img {
+				background-color: inherit;
+			}
 			img {
-				background-color: rgba(255, 255, 255, 0.125);
+				opacity: 0.5;
 			}
 		}
 	}
