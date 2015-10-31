@@ -1002,28 +1002,6 @@ button,
 			width: 300px;
 			max-width: 60vw;
 		}
-
-		.app-link {
-			margin-top: 5vh;
-			max-width: 400px;
-			display: inline-block;
-
-			a {
-				text-decoration: none;
-				border: none;
-
-				&:hover {
-					img {
-						background-color: rgba(255, 255, 255, 0.125);
-					}
-				}
-			}
-
-			.app-store-logo, .google-play-logo {
-				@include vendor('transition', ('background-color #{_duration(transition)} ease-in-out', 'color #{_duration(transition)} ease-in-out'));
-				width: 100%;
-			}
-		}
 	}
 
 	&:after {
@@ -1035,6 +1013,28 @@ button,
 		opacity: 0;
 		position: absolute;
 		top: 0;
+		width: 100%;
+	}
+}
+
+.app-link {
+	margin-top: 5vh;
+	max-width: 400px;
+	display: inline-block;
+
+	a {
+		text-decoration: none;
+		border: none;
+
+		&:hover {
+			img {
+				background-color: rgba(255, 255, 255, 0.125);
+			}
+		}
+	}
+
+	.app-store-logo, .google-play-logo {
+		@include vendor('transition', ('background-color #{_duration(transition)} ease-in-out', 'color #{_duration(transition)} ease-in-out'));
 		width: 100%;
 	}
 }
