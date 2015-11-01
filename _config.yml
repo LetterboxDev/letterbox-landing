@@ -7,7 +7,7 @@ baseurl: "/letterbox-landing" # the subpath of your site, e.g. /blog/
 url: "http://getletterbox.com" # the base hostname & protocol for your site
 
 email: letterboxdev@gmail.com
-facebook_link: ""
+facebook_link: "facebook.com/getletterbox"
 app_store_link: ""
 play_store_link: ""
 
