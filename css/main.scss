@@ -706,7 +706,8 @@ dl {
 }
 
 table {
-	margin: 0 0 _size(element-margin) 0;
+	// margin: 0 0 _size(element-margin) 0; // default
+	margin: 1em 0;
 	width: 100%;
 
 	tbody {
@@ -721,7 +722,8 @@ table {
 	}
 
 	td {
-		padding: 0.75em 0.75em;
+		// padding: 0.75em 0.75em;
+		padding: 0.3em;
 	}
 
 	th {
@@ -1036,6 +1038,7 @@ button,
 
 		&.disabled {
 			cursor: default;
+			pointer-events: none;
 			&:after {
 				content: "Coming soon";
 				font-size: 13px;
@@ -1467,4 +1470,15 @@ body.is-loading {
 			@include padding(2em, 1em, (0,0,_size(element-margin),0));
 		}
 
+}
+
+#terms {
+	table tbody tr {
+		background: none;
+	}
+}
+
+.last-updated {
+	margin-bottom: 2em;
+	color: grey;
 }
