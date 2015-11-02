@@ -1038,6 +1038,7 @@ button,
 
 		&.disabled {
 			cursor: default;
+			pointer-events: none;
 			&:after {
 				content: "Coming soon";
 				font-size: 13px;
