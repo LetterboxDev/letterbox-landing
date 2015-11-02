@@ -6,7 +6,7 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "/letterbox-landing" # the subpath of your site, e.g. /blog/
 url: "http://getletterbox.com" # the base hostname & protocol for your site
 
-email: letterboxdev@gmail.com
+email: contact@getletterbox.com
 facebook_link: "http://www.facebook.com/getletterbox"
 app_store_link: ""
 play_store_link: "https://play.google.com/store/apps/details?id=com.getletterbox.letterbox"
