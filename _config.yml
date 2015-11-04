@@ -9,7 +9,7 @@ url: "http://getletterbox.com" # the base hostname & protocol for your site
 email: contact@getletterbox.com
 facebook_link: "http://www.facebook.com/getletterbox"
 app_store_link: ""
-play_store_link: ""
+play_store_link: "https://play.google.com/store/apps/details?id=com.getletterbox.letterbox"
 
 # Build settings
 markdown: kramdown
