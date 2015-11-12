@@ -1025,8 +1025,11 @@ button,
 
 .app-link.row {
 	margin-top: 5vh;
-	max-width: 400px;
+	width: 600px;
+	max-width: calc(100vw - 64px);
+
 	display: inline-block;
+	padding: 0 0 0 0.4em;
 
 	a {
 		text-decoration: none;
@@ -1054,7 +1057,7 @@ button,
 		}
 	}
 
-	.app-store-logo, .google-play-logo {
+	.app-store-logo, .google-play-logo, .web-logo {
 		@include vendor('transition', ('background-color #{_duration(transition)} ease-in-out', 'color #{_duration(transition)} ease-in-out'));
 		width: 100%;
 	}
