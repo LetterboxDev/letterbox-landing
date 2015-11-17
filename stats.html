@@ -1,0 +1,428 @@
+---
+layout: default
+title: Statistics | Letterbox
+permalink: /stats/
+---
+
+<!-- Thin top header -->
+<section id="header" style="height: 2vh; min-height: 2vh; padding: 0">
+</section>
+
+<section class="main style1">
+  <div class="container">
+    <header class="major">
+      <h2>Statistics</h2>
+    </header>
+    <div class="row">
+      <div class="12u">
+        <h6 class="last-updated">LAST UPDATED: 18th day of November 2015</h6>
+        <div id="stats">
+          <h1><b>800</b> Users registered</h1>
+          <h1><b>1000</b> Letters delivered</h1>
+          <h1><b>500</b> Rooms created</h1>
+          <h1><b>10000</b> Messages sent</h1>
+          <div class="row">
+            <div class="6u">
+              <div id="gender-user"></div>
+            </div>
+            <div class="6u">
+              <div id="age-user"></div>
+            </div>
+          </div>
+          <div id="user-growth"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+   window.PykChartsInit = function (e) {
+   var k1 = new PykCharts.oneD.pie({
+
+      //Chart Container Id
+      "selector": "#gender-user",
+
+      //Data file path
+      "data": 
+      [
+        {
+          "name": "Female",
+          "weight": 200
+        },
+        {
+          "name": "Male",
+          "weight": 600
+        }
+      ],
+
+      //Chart mode
+      "mode": "default",
+
+      //Chart Size Parameters
+      "chart_width": 620,
+      "chart_height": 400,
+
+      //Pie parameters
+      "pie_radius_percent": 70,
+
+      //Chart color parameter
+      "color_mode": "shade",
+      "shade_color": "#FC4134",
+      "chart_color": [
+                "#fc4134",
+                "#fd675d",
+                "#fd8d85",
+                "#feb3ae",
+                "#fed9d6"
+      ],
+
+      //Chart pointer parameters
+      "pointer_overflow_enable": "yes",
+      "pointer_thickness": 1,
+      "pointer_family": "Source Sans Pro, Helvetica, sans-serif",
+      "pointer_size": 13,
+      "pointer_weight": "normal",
+
+      //Chart labels parameters
+      "label_size": 13,
+      "label_weight": "normal",
+      "label_family": "Source Sans Pro, Helvetica, sans-serif",
+
+      //Realtime data parameters
+      "real_time_charts_last_updated_at_enable": "no",
+      "real_time_charts_refresh_frequency": 0,
+
+      //Chart border parameters
+      "border_between_chart_elements_thickness": 1,
+      "border_between_chart_elements_style": "solid",
+
+      //Clubdata parameters
+      "clubdata_enable": "yes",
+      "clubdata_text": "Others",
+      "clubdata_maximum_nodes": 5,
+
+      //Chart title parameters
+      "title_text": "User gender distribution",
+      "title_size": 2,
+      "title_weight": "light",
+      "title_family": "Source Sans Pro, Helvetica, sans-serif",
+      "title_color": "#1D1D1D",
+
+      //Chart-interactive parameters
+      "chart_onhover_highlight_enable": "yes",
+      "tooltip_enable": "yes",
+      "transition_duration": 0,
+   });
+
+    var k2 = new PykCharts.oneD.pie({
+
+      //Chart Container Id
+      "selector": "#age-user",
+
+      //Data file path
+      "data": 
+      [
+        {
+          "name": "<20",
+          "weight": 177
+        },
+        {
+          "name": "21~23",
+          "weight": 355
+        },
+        {
+          "name": "24~27",
+          "weight": 299
+        },
+        {
+          "name": "27~30",
+          "weight": 87
+        },
+        {
+          "name": ">30",
+          "weight": 10
+        }
+      ],
+
+      //Chart mode
+      "mode": "default",
+
+      //Chart Size Parameters
+      "chart_width": 620,
+      "chart_height": 400,
+
+      //Pie parameters
+      "pie_radius_percent": 70,
+
+      //Chart color parameter
+      "color_mode": "shade",
+      "shade_color": "#FC4134",
+      "chart_color": [
+                "#fc4134",
+                "#fd675d",
+                "#fd8d85",
+                "#feb3ae",
+                "#fed9d6"
+      ],
+
+      //Chart pointer parameters
+      "pointer_overflow_enable": "yes",
+      "pointer_thickness": 1,
+      "pointer_family": "Source Sans Pro, Helvetica, sans-serif",
+      "pointer_size": 13,
+      "pointer_weight": "normal",
+
+      //Chart labels parameters
+      "label_size": 13,
+      "label_weight": "normal",
+      "label_family": "Source Sans Pro, Helvetica, sans-serif",
+
+      //Realtime data parameters
+      "real_time_charts_last_updated_at_enable": "no",
+      "real_time_charts_refresh_frequency": 0,
+
+      //Chart border parameters
+      "border_between_chart_elements_thickness": 1,
+      "border_between_chart_elements_style": "solid",
+
+      //Clubdata parameters
+      "clubdata_enable": "yes",
+      "clubdata_text": "Others",
+      "clubdata_maximum_nodes": 5,
+
+      //Chart title parameters
+      "title_text": "User age distribution",
+      "title_size": 2,
+      "title_weight": "light",
+      "title_family": "Source Sans Pro, Helvetica, sans-serif",
+      "title_color": "#1D1D1D",
+
+      //Chart-interactive parameters
+      "chart_onhover_highlight_enable": "yes",
+      "tooltip_enable": "yes",
+      "transition_duration": 0,
+   });
+
+  var k3 = new PykCharts.multiD.line({
+
+      //Chart Container Id
+      "selector": "#user-growth",
+      
+      //Data file path
+      "data": 
+      [
+        {
+          'name': 'number of users',
+          'x': 1,
+          'y': 0,
+          'tooltip': 0
+        },
+        {
+          'name': 'number of users',
+          'x': 2,
+          'y': 10,
+          'tooltip': 10
+        },
+        {
+          'name': 'number of users',
+          'x': 3,
+          'y': 100,
+          'tooltip': 100
+        },
+        {
+          'name': 'number of users',
+          'x': 4,
+          'y': 106,
+          'tooltip': 106
+        },
+        {
+          'name': 'number of users',
+          'x': 5,
+          'y': 109,
+          'tooltip': 109
+        },
+        {
+          'name': 'number of users',
+          'x': 6,
+          'y': 109,
+          'tooltip': 109
+        },
+        {
+          'name': 'number of users',
+          'x': 7,
+          'y': 109,
+          'tooltip': 109
+        },
+        {
+          'name': 'number of users',
+          'x': 8,
+          'y': 130,
+          'tooltip': 130
+        },
+        {
+          'name': 'number of users',
+          'x': 9,
+          'y': 133,
+          'tooltip': 133
+        },
+        {
+          'name': 'number of users',
+          'x': 10,
+          'y': 410,
+          'tooltip': 410
+        },
+        {
+          'name': 'number of users',
+          'x': 11,
+          'y': 510,
+          'tooltip': 510
+        },
+        {
+          'name': 'number of users',
+          'x': 12,
+          'y': 810,
+          'tooltip': 810
+        },
+        {
+          'name': 'number of users',
+          'x': 13,
+          'y': 819,
+          'tooltip': 819
+        },
+        {
+          'name': 'number of users',
+          'x': 14,
+          'y': 819,
+          'tooltip': 819
+        },
+        {
+          'name': 'number of users',
+          'x': 15,
+          'y': 819,
+          'tooltip': 819
+        },
+        {
+          'name': 'number of users',
+          'x': 16,
+          'y': 819,
+          'tooltip': 819
+        },
+        {
+          'name': 'number of users',
+          'x': 17,
+          'y': 819,
+          'tooltip': 819
+        },
+        {
+          'name': 'number of users',
+          'x': 18,
+          'y': 819,
+          'tooltip': 819
+        }
+      ],
+
+      //Chart mode
+      "mode": "default",
+
+      //Chart Size Parameters      
+      "chart_width": 620,
+      "chart_height": 400,
+      "chart_margin_left": 50,
+      "chart_margin_right": 25,
+      "chart_margin_top": 35,
+      "chart_margin_bottom": 35,
+
+      //Chart color parameter
+      "color_mode": "saturation",
+      "saturation_color": "#FC4134",
+      "chart_color": [
+                "#FC4134"
+      ],
+
+      //Chart pointer parameters
+      "pointer_overflow_enable": "yes",
+      "pointer_thickness": 1,
+      "pointer_family": "Source Sans Pro, Helvetica, sans-serif",
+      "pointer_size": 13,
+      "pointer_weight": "normal",
+
+      //Axis parameter
+      "axis_onhover_highlight_enable": "no",
+
+      //X-Axis parameter
+      "axis_x_enable": "no",
+      "axis_x_title": "",
+      "axis_x_position": "bottom",
+      "axis_x_pointer_position": "bottom",
+      "axis_x_line_color": "#1D1D1D",
+      "axis_x_pointer_size": 12,
+      "axis_x_pointer_color": "#1D1D1D",
+      "axis_x_no_of_axis_value": 5,
+      "axis_x_pointer_padding": 6,
+      "axis_x_outer_pointer_length": 0,
+      "axis_x_pointer_values": [],
+      "axis_x_time_value_datatype": "",
+      "axis_x_time_value_interval": 0,
+
+      //Y-Axis parameter
+      "axis_y_enable": "yes",
+      "axis_y_title": "",
+      "axis_y_position": "left",
+      "axis_y_pointer_position": "left",
+      "axis_y_line_color": "#1D1D1D",
+      "axis_y_pointer_size": 12,
+      "axis_y_pointer_color": "#1D1D1D",
+      "axis_y_no_of_axis_value": 5,
+      "axis_y_pointer_padding": 6,
+      "axis_y_pointer_values": [],
+      "axis_y_outer_pointer_length": 0,
+      "axis_y_time_value_datatype": "",
+      "axis_y_time_value_interval": 0,
+
+      //Chart highlight parameters
+      "highlight": "India",
+      "highlight_color": "#08306b",
+
+      //Realtime data parameters
+      "real_time_charts_last_updated_at_enable": "no",
+      "real_time_charts_refresh_frequency": 0,
+
+      //Chart-interactive parameters
+      "transition_duration": 0,
+      "chart_onhover_highlight_enable": "yes",
+
+      //Grid paramters
+      "chart_grid_x_enable": "yes",
+      "chart_grid_y_enable": "yes",
+      "chart_grid_color": "#ddd",
+
+      //Tooltip parameters
+      "tooltip_enable": "yes",
+      "tooltip_mode": "moving",
+      "tooltip_position_top": 0,
+      "tooltip_position_left": 0,
+
+      //Annotation parameters
+      "annotation_enable": "no",
+      "annotation_background_color": "#C2CBCF",
+      "annotation_font_color": "black",
+      "annotation_view_mode": "onload",
+
+      //Other parameters
+      "crosshair_enable": "yes",
+      "curvy_lines_enable": "no",
+      "zoom_enable": "no",
+
+      //Chart title parameters
+      "title_text": "User growth",
+      "title_size": 2,
+      "title_weight": "light",
+      "title_family": "Source Sans Pro, Helvetica, sans-serif",
+      "title_color": "#1D1D1D",
+   });
+   k1.execute();
+   k2.execute();
+   k3.execute();
+  }
+  </script>
+</section>
