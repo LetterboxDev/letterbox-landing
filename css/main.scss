@@ -6,6 +6,7 @@
 @import 'libs/functions';
 @import 'libs/mixins';
 @import url('font-awesome.min.css');
+@import url('pykcharts.1.1.0.min.css');
 @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic");
 
 /*
@@ -1484,4 +1485,22 @@ body.is-loading {
 .last-updated {
 	margin-bottom: 2em;
 	color: grey;
+}
+
+.PykCharts-credits {
+	display: none;
+}
+
+#stats {
+	text-align: center;
+
+	#title {
+		text-align: center !important;
+		width: inherit !important;
+		float: inherit !important;
+	}
+
+	#chart-container-1 {
+		width: 100% !important;
+	}
 }
