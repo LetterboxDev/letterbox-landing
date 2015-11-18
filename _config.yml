@@ -14,3 +14,19 @@ web_link: "http://web.getletterbox.com"
 
 # Build settings
 markdown: kramdown
+
+
+# Statistics
+registered_users: "962"
+female: "257"
+male: "705"
+
+letters: "6,046"
+chats: "463"
+messages: "11,691"
+
+age_below_20: "35"
+age_21_to_23: "475"
+age_24_to_27: "323"
+age_27_to_30: "57"
+age_above_31: "72"

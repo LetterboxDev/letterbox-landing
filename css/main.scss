@@ -1494,6 +1494,14 @@ body.is-loading {
 #stats {
 	text-align: center;
 
+	#summary {
+		margin: 5em 0;
+		h1 {
+			font-size: 3em;
+			margin-bottom: 0.5em;
+		}
+	}
+	
 	#title {
 		text-align: center !important;
 		width: inherit !important;

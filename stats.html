@@ -17,10 +17,12 @@ permalink: /stats/
       <div class="12u">
         <h6 class="last-updated">LAST UPDATED: 18th day of November 2015</h6>
         <div id="stats">
-          <h1><b>962</b> Users registered</h1>
-          <h1><b>6,046</b> Letters delivered</h1>
-          <h1><b>463</b> Rooms created</h1>
-          <h1><b>11,691</b> Messages sent</h1>
+          <div id="summary">
+            <h1><b>{{ site.registered_users }}</b> Users registered</h1>
+            <h1><b>{{ site.letters }}</b> Letters delivered</h1>
+            <h1><b>{{ site.chats }}</b> Chats started</h1>
+            <h1><b>{{ site.messages }}</b> Messages sent</h1>
+          </div>
           <div class="row">
             <div class="6u">
               <div id="gender-user"></div>
@@ -47,11 +49,11 @@ permalink: /stats/
       [
         {
           "name": "Female",
-          "weight": 257
+          "weight": {{ site.female }}
         },
         {
           "name": "Male",
-          "weight": 705
+          "weight": {{ site.male }}
         }
       ],
 
@@ -80,11 +82,11 @@ permalink: /stats/
       "pointer_overflow_enable": "yes",
       "pointer_thickness": 1,
       "pointer_family": "Source Sans Pro, Helvetica, sans-serif",
-      "pointer_size": 13,
+      "pointer_size": 15,
       "pointer_weight": "normal",
 
       //Chart labels parameters
-      "label_size": 13,
+      "label_size": 30,
       "label_weight": "normal",
       "label_family": "Source Sans Pro, Helvetica, sans-serif",
 
@@ -102,7 +104,7 @@ permalink: /stats/
       "clubdata_maximum_nodes": 5,
 
       //Chart title parameters
-      "title_text": "User gender distribution",
+      "title_text": "Gender",
       "title_size": 2,
       "title_weight": "light",
       "title_family": "Source Sans Pro, Helvetica, sans-serif",
@@ -124,23 +126,23 @@ permalink: /stats/
       [
         {
           "name": "<=20",
-          "weight": 35
+          "weight": {{ site.age_below_20 }}
         },
         {
           "name": "21~23",
-          "weight": 475
+          "weight": {{ site.age_21_to_23 }}
         },
         {
           "name": "24~27",
-          "weight": 323
+          "weight": {{ site.age_24_to_27 }}
         },
         {
           "name": "27~30",
-          "weight": 57
+          "weight": {{ site.age_27_to_30 }}
         },
         {
           "name": ">=31",
-          "weight": 72
+          "weight": {{ site.age_above_31 }}
         }
       ],
 
@@ -169,11 +171,11 @@ permalink: /stats/
       "pointer_overflow_enable": "yes",
       "pointer_thickness": 1,
       "pointer_family": "Source Sans Pro, Helvetica, sans-serif",
-      "pointer_size": 13,
+      "pointer_size": 15,
       "pointer_weight": "normal",
 
       //Chart labels parameters
-      "label_size": 13,
+      "label_size": 30,
       "label_weight": "normal",
       "label_family": "Source Sans Pro, Helvetica, sans-serif",
 
@@ -191,7 +193,7 @@ permalink: /stats/
       "clubdata_maximum_nodes": 5,
 
       //Chart title parameters
-      "title_text": "User age distribution",
+      "title_text": "Age",
       "title_size": 2,
       "title_weight": "light",
       "title_family": "Source Sans Pro, Helvetica, sans-serif",
